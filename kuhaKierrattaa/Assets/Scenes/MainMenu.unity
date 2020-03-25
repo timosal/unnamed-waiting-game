@@ -421,7 +421,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 699399570}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1295633820}
+        m_MethodName: GotoGuideScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 1
 --- !u!114 &699399570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +695,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1295633818}
   - component: {fileID: 1295633819}
+  - component: {fileID: 1295633820}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -715,6 +727,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9628cb85c09f39941a59e0fabe4cabd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1295633820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295633817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39eb59b3f9b4b9b4aaa87eaab1dad666, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1586203662
