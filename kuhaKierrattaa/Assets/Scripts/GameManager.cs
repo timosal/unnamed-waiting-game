@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private Text itemText;
+    private int answer;
 
     // Start is called before the first frame update
     void Start()

@@ -6,5 +6,6 @@ using UnityEngine;
 public class Items { 
 
     public string items;
+    public int answer;
     
 }
