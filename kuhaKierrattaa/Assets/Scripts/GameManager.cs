@@ -15,6 +15,27 @@ public class GameManager : MonoBehaviour
     private Text itemText;
     private int answer;
 
+    public GameObject Biojate;
+    public GameObject Lasinkerays;
+    public GameObject Ongelmajate;
+    public int Choice;
+
+    public int choiceMade01()
+    {
+        Choice = 1;
+        return Choice;
+    }
+    public int choiceMade02()
+    {
+        Choice = 2;
+        return Choice;
+    }
+    public int choiceMade03()
+    {
+        Choice = 3;
+        return Choice;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +60,32 @@ public class GameManager : MonoBehaviour
         itemText.text = currentItem.items;
         //Removes the item shown from the list -> won't be shown again
         unsortedItems.RemoveAt(randomItemIndex);
+
+        Items item = new Items(); 
     }
+
+        void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            CheckAnswer(Choice, answer);
+                if (true) {
+                    Debug.Log("Oikein");
+                }
+                else {Debug.Log("Väärin");}
+
+        }
+    }
+        public bool CheckAnswer(int Choice, int answer)
+    {
+        if (answer == Choice)
+        {
+            return true;
+        }
+        else return false;
+    }
+
+
 
     //Need to have a collision detect for items so that that item will be disabled
 }

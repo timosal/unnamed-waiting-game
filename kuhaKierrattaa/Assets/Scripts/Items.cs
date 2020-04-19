@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class Items { 
-
+public class Items
+{
     public string items;
     public int answer;
-    
+
 }
