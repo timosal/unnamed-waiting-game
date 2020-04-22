@@ -334,7 +334,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: High Scores in Finnish
+  m_Text: 'Huippu Tulokset
+
+'
 --- !u!222 &283044220
 CanvasRenderer:
   m_ObjectHideFlags: 0
